@@ -1,0 +1,99 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activesupport (4.2.3)
+      i18n (~> 0.7)
+      json (~> 1.7, >= 1.7.7)
+      minitest (~> 5.1)
+      thread_safe (~> 0.3, >= 0.3.4)
+      tzinfo (~> 1.1)
+    addressable (2.3.8)
+    aptible-api (0.7.17)
+      aptible-auth (>= 0.5.0)
+      aptible-billforward
+      aptible-resource (>= 0.2.9)
+      gem_config
+      stripe (>= 1.13.0)
+    aptible-auth (0.9.1)
+      aptible-billforward
+      aptible-billing
+      aptible-resource (>= 0.2.1)
+      gem_config
+      oauth2-aptible
+      stripe (>= 1.13.0)
+    aptible-billforward (0.0.2)
+      gem_config
+      sawyer (~> 0.5.3)
+    aptible-billing (0.1.2)
+      aptible-resource (>= 0.2.1)
+      stripe (>= 1.13.0)
+    aptible-cli (0.5.10)
+      aptible-api (>= 0.7.3)
+      aptible-resource (>= 0.3.0)
+      git
+      term-ansicolor
+      thor (>= 0.19.0)
+    aptible-resource (0.3.0)
+      activesupport
+      faraday (>= 0.8.6)
+      fridge
+      json
+      uri_template (>= 0.5.2)
+    domain_name (0.5.24)
+      unf (>= 0.0.5, < 1.0.0)
+    faraday (0.9.1)
+      multipart-post (>= 1.2, < 3)
+    fridge (0.3.0)
+      gem_config
+      jwt (~> 0.1.13)
+    gem_config (0.3.1)
+    git (1.2.9.1)
+    http-cookie (1.0.2)
+      domain_name (~> 0.5)
+    i18n (0.7.0)
+    json (1.8.3)
+    jwt (0.1.13)
+      multi_json (>= 1.5)
+    mime-types (2.6.1)
+    minitest (5.8.0)
+    multi_json (1.11.2)
+    multi_xml (0.5.5)
+    multipart-post (2.0.0)
+    netrc (0.10.3)
+    oauth2-aptible (0.9.4)
+      faraday (>= 0.8, < 0.10)
+      jwt (~> 0.1.8)
+      multi_json (~> 1.3)
+      multi_xml (~> 0.5)
+      rack (~> 1.2)
+    rack (1.6.4)
+    rest-client (1.8.0)
+      http-cookie (>= 1.0.2, < 2.0)
+      mime-types (>= 1.16, < 3.0)
+      netrc (~> 0.7)
+    sawyer (0.5.5)
+      addressable (~> 2.3.5)
+      faraday (~> 0.8, < 0.10)
+    stripe (1.24.0)
+      json (~> 1.8.1)
+      rest-client (~> 1.4)
+    term-ansicolor (1.3.2)
+      tins (~> 1.0)
+    thor (0.19.1)
+    thread_safe (0.3.5)
+    tins (1.6.0)
+    tzinfo (1.2.2)
+      thread_safe (~> 0.1)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.7.1)
+    uri_template (0.7.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  aptible-cli
+
+BUNDLED WITH
+   1.10.6
