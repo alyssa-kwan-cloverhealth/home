@@ -1,2 +1,5 @@
 source 'https://rubygems.org'
 gem 'aptible-cli'
+gem 'travis'
+gem 'travis-lint'
+gem 'gemfury'
