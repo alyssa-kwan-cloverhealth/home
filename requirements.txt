@@ -1,4 +1,9 @@
-ipython==4.0
-virtualenv==13.1.2
+virtualenv
+jedi
+importmagic
+autopep
+flake8>=2.4.1
+pep8>=1.5.7,!=1.6.0,!=1.6.1,!=1.6.2
+ipython
 jupyter
-
+awscli

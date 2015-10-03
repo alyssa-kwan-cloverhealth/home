@@ -1,0 +1,10 @@
+for aptible_db in "$@"; do
+    port_name="CLHT_${aptible_db}_PORT"
+    port=${!port_name}
+    fifo=$(mktemp -u -t 'clht')
+    mkfifo "$fifo"
+    bundle exec aptible db:tunnel "$aptible_db" --port "$port" >"$fifo" &
+    export CLHT_FIFOS="$CLHT_FIFOS:'$aptible_db'='$fifo'"
+    aptible_db_url=$(head -n2 "$fifo" | tail -n1 | cut -d ' ' -f 3)
+    export ${aptible_db}_url="'$aptible_db_url'"
+done

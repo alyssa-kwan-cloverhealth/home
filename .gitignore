@@ -8,5 +8,7 @@ node_modules/
 
 _/
 
-TAGS
-
+/TAGS
+/GPATH
+/GRTAGS
+/GTAGS
